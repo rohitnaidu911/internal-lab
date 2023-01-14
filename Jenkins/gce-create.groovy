@@ -26,7 +26,7 @@ pipeline {
     }
 	}
  	 
-	stage('Create Instance') {
+	stage('Action Instance') {
 	 steps {
     
     sh 'gcloud compute instances $ACTION $VMNAME --zone=$ZONES'
